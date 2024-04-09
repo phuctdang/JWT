@@ -1,18 +1,15 @@
 import { useState } from 'react'
-import SignUpForm from './SIgnUpForm'
-import Authentication from './Authenticate'
 import './App.css'
-
+import SignUpForm from './Components/SignUpForm.jsx'
+import Authenticate from './Components/Authenticate.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>JWT Authentication</h1>
-      <form>
-        
-      </form>
+      <SignUpForm />
+      <Authenticate />
     </>
   )
 }
